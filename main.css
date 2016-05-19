@@ -65,8 +65,14 @@ h4 {
   padding: 100px 25px;
 }
 
+button:active {
+outline: none;
+border: none;
+}
+
 button:focus {
   outline:0;
+  
 }
 
 .bg-grey {
