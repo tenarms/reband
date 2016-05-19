@@ -1,2 +1,2 @@
-# reband
-Re-banding a site
+# rebrand
+Re-branding a site
