@@ -34,7 +34,7 @@ h4 {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #8E443D;
+  background-color: #CBCEEF;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -60,7 +60,7 @@ h4 {
 }
 
 .jumbotron {
-  background-color: #320A28;
+  background-color: #3C45D2;
   color: #fff;
   padding: 100px 25px;
 }
@@ -77,12 +77,12 @@ h4 {
 }
 
 .logo-small {
-  color: #511730;
+  color: #E0E1EF;
   font-size: 50px;
 }
 
 .logo {
-  color: #CB9173;
+  color: #E0E1EF;
   font-size: 200px;
 }
 
@@ -142,7 +142,7 @@ h4 {
 
 .panel-heading {
   color: #fff !important;
-  background-color: #511730 !important;
+  background-color: #3C45D2 !important;
   padding: 25px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 0px;
@@ -166,7 +166,7 @@ h4 {
 
 .panel-footer .btn {
   margin: 15px 0;
-  background-color: #511730;
+  background-color: #3C45D2;
   color: #fff;
 }
 
