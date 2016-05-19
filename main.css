@@ -34,7 +34,7 @@ h4 {
 
 .navbar {
   margin-bottom: 0;
-  background-color: #CBCEEF;
+  background-color: #00171F;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
@@ -60,7 +60,7 @@ h4 {
 }
 
 .jumbotron {
-  background-color: #3C45D2;
+  background-color: #003459;
   color: #fff;
   padding: 100px 25px;
 }
@@ -77,12 +77,12 @@ h4 {
 }
 
 .logo-small {
-  color: #E0E1EF;
+  color: #00A8E8;
   font-size: 50px;
 }
 
 .logo {
-  color: #E0E1EF;
+  color: #00A8E8;
   font-size: 200px;
 }
 
@@ -101,15 +101,15 @@ h4 {
 .carousel-control.right,
 .carousel-control.left {
   background-image: none;
-  color: #8E443D;
+  color: #00171F;
 }
 
 .carousel-indicators li {
-  border-color: #8E443D;
+  border-color: #00171F;
 }
 
 .carousel-indicators li.active {
-  background-color: #8E443D;
+  background-color: #00171F;
 }
 
 .item h4 {
@@ -125,7 +125,7 @@ h4 {
 }
 
 .panel {
-  border: 1px solid #511730;
+  border: 1px solid #003459;
   border-radius: 0;
   !important transition: box-shadow 0.5s;
 }
@@ -142,7 +142,7 @@ h4 {
 
 .panel-heading {
   color: #fff !important;
-  background-color: #3C45D2 !important;
+  background-color: #003459 !important;
   padding: 25px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 0px;
@@ -166,12 +166,12 @@ h4 {
 
 .panel-footer .btn {
   margin: 15px 0;
-  background-color: #3C45D2;
+  background-color: #003459;
   color: #fff;
 }
 
 footer .glyphicon {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #8E443D;
+  color: #00171F;
 }
