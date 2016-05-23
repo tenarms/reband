@@ -3,6 +3,7 @@
 }
 .background-image{
   background: url('slide4.jpg') no-repeat center center;
+  height:600px;
 }
 .navbar {
   background-color: transparent;
