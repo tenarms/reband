@@ -19,5 +19,5 @@
     color: white;
 }
 .nav.navbar-nav.navbar-right li a:hover {
-    opacity:50%;
+    opacity:0.3;
 }
