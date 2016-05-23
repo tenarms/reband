@@ -15,6 +15,6 @@
 .text-white{
   color:white;
 }
-.nav>li{
-  color:#FFF;
+.nav.navbar-nav.navbar-right li a {
+    color: white;
 }
