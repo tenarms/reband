@@ -1,3 +1,6 @@
+h1, p {
+  color: white;
+}
 .pull-left>img{
   padding-top: 5px;
 }
