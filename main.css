@@ -5,5 +5,5 @@
 .jumbotron {
   background: url('slide4.jpg') no-repeat center center;
   background-size:cover;
-  position: fixed;
+  height: 100%;
 }
