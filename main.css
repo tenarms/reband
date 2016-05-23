@@ -1,3 +1,6 @@
 .pull-left>img{
   padding-top: 5px;
 }
+.jumbotron{
+  background-image: "slide4.jpg";
+}
