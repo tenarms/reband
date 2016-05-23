@@ -4,12 +4,3 @@
 .pull-left>img{
   padding-top: 5px;
 }
-
-background-image {
-    height: 400px;
-    background-image: url('slide4.jpg');
-    width: 100%;
-    position: absolute;
-    top:0;
-    z-index: -100;
-}
