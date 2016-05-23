@@ -2,5 +2,5 @@
   padding-top: 5px;
 }
 .jumbotron{
-  background-image: "slide4.jpg";
+  background-image: url('slide4.jpg');
 }
