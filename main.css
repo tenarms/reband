@@ -2,11 +2,11 @@
   padding-top: 5px;
 }
 .background-image{
-  background-image: url('slide4.jpg') no-repeat center center;
+  background: url('slide4.jpg') no-repeat center center;
   position:fixed;
 }
 .navbar {
-   background-color: transparent;
+  background-color: transparent;
 }
 .jumbotron{
   background-color: transparent;
