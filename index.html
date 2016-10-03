@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
 <head>
   <title>R.B. Hash & Associates, Inc.</title>
   <meta charset="UTF-8">
@@ -6,54 +8,64 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </head>
-<body>
-  <div class="background-image">
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse1">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="pull-left" href="#"><img src="rbh_logo2.png" width=50%></a>
-    </div>
-    <div class="collapse navbar-collapse" id="collapse1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Our Work</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="container-fluid">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-sm-offset-1 text-white">
-        <h1>R.B. Hash & Associates</h1>
-        <p>Roofing | Sheet Metal | Waterproofing</p>
-      </div>
-    </div>
-</div>
-</div>
-</div>
-<div class="container">
-<h1>About Us</h1>
-<p>Founded in 1991, R.B. Hash is an established, full service roofing contractor specializing in satisfied customers.  Meeting and 
-exceeding your every need is our commitment to you. We provide the strongest work force in the roofing industry, and all of our 
-employees (management and crew) are highly skilled and have been trained extensively in their specialized fields.</p>
-<p>We know that the best roof system ever designed will not do the job if it is not properly installed. That is why only R.B. Hash 
-crews install R.B. Hash roofs. We hire our crews. We train our crews. We insure our crews. We stand behind every job with a 
-satisfaction guaranteed policy.</p>
-</div>
- <div class="container">
- <h4>Reviews</h4>
-   <ul>
+  <body ng-controller="StoreController as store">
+    <!--  Store Header  -->
+    <header>
+      <h1 class="text-center">Flatlander Crafted Gems</h1>
+      <h2 class="text-center">– an Angular store –</h2>
+    </header>
+
+    <!--  Products Container  -->
+    <div class="list-group">
+      <!--  Product Container  -->
+      <div class="list-group-item" ng-repeat="product in store.products">
+        <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+        <!-- Image Gallery  -->
+        <div ng-controller="GalleryController as gallery"  ng-show="product.images.length">
+          <div class="img-wrap">
+            <img ng-src="{{product.images[gallery.current]}}" />
+          </div>
+          <ul class="img-thumbnails clearfix">
+            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+              <img ng-src="{{image}}" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- Product Tabs  -->
+        <section ng-controller="TabController as tab">
+          <ul class="nav nav-pills">
+            <li ng-class="{ active:tab.isSet(1) }">
+              <a href ng-click="tab.setTab(1)">Description</a>
+            </li>
+            <li ng-class="{ active:tab.isSet(2) }">
+              <a href ng-click="tab.setTab(2)">Specs</a>
+            </li>
+            <li ng-class="{ active:tab.isSet(3) }">
+              <a href ng-click="tab.setTab(3)">Reviews</a>
+            </li>
+          </ul>
+
+          <!--  Description Tab's Content  -->
+          <div ng-show="tab.isSet(1)">
+            <h4>Description</h4>
+            <blockquote>{{product.description}}</blockquote>
+          </div>
+
+          <!--  Spec Tab's Content  -->
+          <div ng-show="tab.isSet(2)">
+            <h4>Specs</h4>
+            <blockquote>Shine: {{product.shine}}</blockquote>
+          </div>
+
+          <!--  Review Tab's Content  -->
+          <div ng-show="tab.isSet(3)">
+            <!--  Product Reviews List -->
+            <ul>
+              <h4>Reviews</h4>
               <li ng-repeat="review in product.reviews">
                 <blockquote>
                   <strong>{{review.stars}} Stars</strong>
@@ -61,7 +73,7 @@ satisfaction guaranteed policy.</p>
                   <cite class="clearfix">—{{review.author}}</cite>
                 </blockquote>
               </li>
-   </ul>
+            </ul>
 
             <!--  Review Form -->
             <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
@@ -90,5 +102,11 @@ satisfaction guaranteed policy.</p>
                 <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
               </fieldset>
             </form>
-  </div>
-</body>
+          </div>
+
+        </section>
+      </div>
+
+    </div>
+  </body>
+</html>
