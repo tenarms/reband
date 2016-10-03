@@ -51,7 +51,7 @@ employees (management and crew) are highly skilled and have been trained extensi
 crews install R.B. Hash roofs. We hire our crews. We train our crews. We insure our crews. We stand behind every job with a 
 satisfaction guaranteed policy.</p>
 </div>
- 
+ <div class="container">
  <h4>Reviews</h4>
               <li ng-repeat="review in product.reviews">
                 <blockquote>
@@ -60,7 +60,7 @@ satisfaction guaranteed policy.</p>
                   <cite class="clearfix">—{{review.author}}</cite>
                 </blockquote>
               </li>
-            </ul>
+            
 
             <!--  Review Form -->
             <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
@@ -89,5 +89,5 @@ satisfaction guaranteed policy.</p>
                 <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
               </fieldset>
             </form>
-  
+  </div>
 </body>
