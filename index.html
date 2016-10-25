@@ -83,6 +83,16 @@ $(document).ready(function(){
 			.centerd{
 				text-align: center;
 			}
+			table#t01 tr:nth-child(even) {
+    			background-color: #eee;
+			}
+			table#t01 tr:nth-child(odd) {
+   			background-color:#fff;
+			}
+			table#t01 th {
+    			background-color: black;
+    			color: white;
+			}
 		</style>
 	</head>
 <body>
@@ -585,14 +595,15 @@ you are about to visit.<br><br>
 
 							<div class="col-md-9 blog-side">
 
-                      		<h1 class="centerd">Celebrating 60 years, with you!</h1>  
-				<h3 class="centerd">Thank you for your support along the way.</h3>
+                      		<h1 class="centerd">Celebrating 60 years, with you!</h1><br>
+				<h3 class="centerd"><em>Thank you for your support along the way.</em></h3>
 				<p>As we celebrate 60 years of making a difference in the Cy-Fair community, 
 				we also celebrate you, our members, who have supported us all this time. 
 				Join us for the following events as our way of saying thank you.</p>
-								
+				<br>				
 				<h3 class="centerd">Events Calendar</h3>
-								<table>
+<div class="centerd" id="t01">							
+<table>
   <tr>
     <th>Event</th>
     <th>Location</th>
@@ -624,6 +635,7 @@ you are about to visit.<br><br>
     <td>Jan. 2nd @ 1 PM</td>
   </tr>
 </table>
+</div>
 
                          </div> 
 
