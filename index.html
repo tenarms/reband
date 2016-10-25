@@ -1,14 +1,1056 @@
-<form method='post'>
-  NAME: <input type='text' name='name' id='name' /><br />
+<!doctype html>
+<html lang="en" class="no-js">
+	<head>
+		<title>CyFair Federal Credit Union - Upcoming Events</title>
 
-  Email: <input type='text' name='email' id='email' /><br />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Upcoming Events">
 
-  Website: <input type='text' name='website' id='website' /><br />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'>
 
-  Comment:<br />
-  <textarea name='comment' id='comment'></textarea><br />
+	 <link rel="stylesheet" type="text/css" href="/css-new/fullwidth.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/css-new/settings.css" media="screen" />
 
-  <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+	<link rel="stylesheet" type="text/css" href="/css-new/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css-new/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css-new/responsive.css" media="screen">
 
-  <input type='submit' value='Submit' />  
-</form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+<script type="text/javascript"> 
+function enableMe() 
+{document.getElementById("dscheck").value="0"; 
+} 
+function isCookieEnabled() { var exp = new Date(); exp.setTime(exp.getTime() + 1800000); 
+setCookie("testCookie", "cookie", exp, false, false, false); 
+if (document.cookie.indexOf('testCookie') == -1) { 
+return false; 
+} 
+exp = new Date(); 
+exp.setTime(exp.getTime() - 1800000); 
+setCookie("testCookie", "cookie", exp, false, false, false); 
+return true; 
+} 
+function setCookie(name, value, expires, path, domain, secure) { 
+var curCookie = name + "=" + value + 
+((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + 
+((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : ""); 
+document.cookie = curCookie; 
+} 
+function isDupSubmit() { 
+var dupSbmt = true; 
+var e = document.getElementById("dscheck"); 
+if (e != null && e.value == "0") { 
+dupSbmt = false; e.value = "1"; setTimeout(enableMe, 5000); 
+} 
+return dupSbmt; 
+} 
+function setParamStatus() { 
+if (!isDupSubmit()) { 
+if (isCookieEnabled()) { 
+document.getElementById('testcookie').value = 'true'; 
+} 
+document.getElementById('testjs').value = 'true'; 
+return true; 
+} 
+return false; 
+}
+
+        </script>
+
+   <script type="text/javascript">
+
+$(document).ready(function(){
+	//Console.log("0");
+	//
+	$("a[target='_blank']").click(function(e){
+		//Console.log("1");
+		
+		e.preventDefault();
+		var url = $(this).attr("href");
+		//Console.log(url);
+		//alert(url);
+		 $('#myModal').modal('show'); 
+	 
+         document.getElementById("linker").href = url;
+	});
+});
+
+</script> 
+	</head>
+<body>
+
+	<!-- Container -->
+	<div id="container">
+		<!-- Header
+
+		    ================================================== -->
+<script type="text/javascript">
+function openWin(url, w, h)
+{
+
+window.open(url, '_blank', 'width=500,height=320,scrollbars=no');
+
+}
+</script>
+
+
+<div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    
+     <div class="modal-header" style="text-align:left;">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&nbsp;&nbsp;&times;&nbsp;&nbsp;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="headertext">Be Safe Out There</h4>
+      </div>
+      <div class="modal-body">
+      
+      <p>You’re about to leave Cy-Fair Federal Credit Union and zip to another corner of the Internet. We do 
+
+check our outgoing links on a regular basis, but cannot guarantee the information or security of the site 
+
+you are about to visit.<br><br>
+<br><center>
+<a style="padding:15px; border-radius:0.5em; background:#7AC043; color:#FFFFFF;" id="linker" href="#" target="thirdparty">Proceed</a></center><br>
+</p>
+      
+    </div>
+  </div>
+</div>
+</div>
+
+        <header class="clearfix">
+        	
+                     
+        
+			<!-- Static navbar -->
+			<div class="navbar navbar-default navbar-fixed-top">
+            
+				<div class="top-line">
+					<div class="container">
+					
+					  <table width="100%"><tr><td valign="top">
+							
+										
+                                            
+						  <form autocomplete="off" id="login" name="login" method="post" action="https://www.cyfairfcuhb.org/tob/live/usp-core/app/initialLogin" onSubmit="return setParamStatus();">
+                          
+                          			<input type="hidden" id="testcookie" name="testcookie" value="false"/>
+										<input type="hidden" id="testjs" name="testjs" value="false"/>
+										<input type="hidden" id="dscheck" name="dscheck" value="0"/>  
+                          
+								  <input type="text" name="userid" id="userid" placeholder="Username" style="margin-top:5px; width:97px;" autocomplete="off" maxlength="256" />	
+								  <input type="password" name="password" id="password" placeholder="Password" style="margin-top:5px;width:110px; " maxlength="32" />
+                                  <input type="submit" value="Sign In" style="border: 1px outset #444444;background-color:#777777;height:27px;width:70px;color:#fff;">
+                                   	
+                                  </form>
+                                  
+                                  <a href="https://www.cyfairfcuhb.org/tob/live/usp-core/app/authUpdate">Forgot Password?</a> <span style="padding-left:5px; padding-right:5px;">|</span> <a href="https://cs.loanspq.com/Consumer/login/default.aspx?enc2=Xfc_WnLuHh-Xttj1BXSOS-ZTO9bSBMNJOV14wGB4eGQg6nEtsieTEdCkzuewqcYwasuofO4XTRfZGVG0uJwUXISLM3Fh0z7YuwTyU_-8hXqcepwx9cLkZQ3B-JFOLRMD">Join Today <i class="fa fa-sign-in"></i></a>
+                                 
+						
+                     </td><td align="right" valign="top">
+                     <div class="ask"> <form method="get" action="/about-us/search.php">
+									<input type="text" name="q" id="q" placeholder="Have a Question?" style="margin-top:5px;"/>
+									<input type="submit" value="Ask" style="border: 1px outset #444444;background-color:#777777;height:27px;width:50px;color:#fff;margin-top:5px;"></form>
+                                    
+                                    <a id="_lpChatBtn" href='https://sales.liveperson.net/hc/90113732/?cmd=file&file=visitorWantsToChat&site=90113732&byhref=1&imageUrl=https://sales.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a/' target='chat90113732'  onClick="javascript:window.open('https://sales.liveperson.net/hc/90113732/?cmd=file&file=visitorWantsToChat&site=90113732&imageUrl=https://sales.liveperson.net/hcp/Gallery/ChatButton-Gallery/English/General/1a/&referrer='+escape(document.location),'chat90113732','width=475,height=400,resizable=yes');return false;" >Live Chat <i class="fa fa-bolt"></i></a>
+                                   
+								   <script language='javascript'> var lpMTagConfig = {'lpServer' : "sales.liveperson.net",'lpNumber' : "90113732",'lpProtocol' : "https"}; function lpAddMonitorTag(src){if(typeof(src)=='undefined'||typeof(src)=='object'){src=lpMTagConfig.lpMTagSrc?lpMTagConfig.lpMTagSrc:'/hcp/html/mTag.js';}if(src.indexOf('http')!=0){src=lpMTagConfig.lpProtocol+"://"+lpMTagConfig.lpServer+src+'?site='+lpMTagConfig.lpNumber;}else{if(src.indexOf('site=')<0){if(src.indexOf('?')<0)src=src+'?';else src=src+'&';src=src+'site='+lpMTagConfig.lpNumber;}};var s=document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('charset','iso-8859-1');s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s);} if (window.attachEvent) window.attachEvent('onload',lpAddMonitorTag); else window.addEventListener("load",lpAddMonitorTag,false);</script>
+                                   
+                                    <span style="padding-left:5px; padding-right:5px;">|</span>  <a href="/contact/">Find a Location <i class="fa fa-map-marker"></i></a>
+                                    </div>
+                      </td></tr></table>
+				  </div>
+				</div>
+				<div class="container">
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+					  </button>
+					  <a class="navbar-brand" href="/"><img src="/images-new/logo.png" alt="" class="img-responsive logo" style="padding-bottom:10px;"></a>
+					</div>
+					<div class="navbar-collapse collapse" style="z-index:1000;">
+						<ul class="nav navbar-nav navbar-right">
+
+				                        <li class="drop"><a href="/">Home</a>
+                                               <ul class="drop-down">
+                                                					      							</ul></li>
+						                        <li class="drop"><a href="/deposit">Deposit</a>
+                                               <ul class="drop-down">
+                                                													<li class="drop"><a href="/deposit/membership/">Membership</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/deposit/advantage-checking/">Advantage Plus Checking</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/deposit/advantage-checking/debit-rewards/">Debit Rewards</a></li>
+																																				<li><a href="/deposit/advantage-checking/emv-card/">EMV Card</a></li>
+																																				<li><a href="/extended/?pid=138">Overdraft Protection</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/deposit/convenience/">Convenience</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/deposit/convenience/estatements/">eStatements</a></li>
+																																				<li><a href="/deposit/convenience/atm-locator/">ATM Locator</a></li>
+																																				<li><a href="/deposit/convenience/bill-pay/">Bill Pay</a></li>
+																																				<li><a href="/deposit/convenience/finance-works/">FinanceWorks</a></li>
+																																				<li><a href="/contact/">Location Listing</a></li>
+																																				<li><a href="/deposit/convenience/mobile-solutions/">Mobile Solutions</a></li>
+																																				<li><a href="/deposit/convenience/online-banking/">Online Banking</a></li>
+																																				<li><a href="/deposit/convenience/wire-services/">Wire Services</a></li>
+																																				<li><a href="/deposit/convenience/additional-services/">Additional Services</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/deposit/insured-savings/">Insured Savings</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/deposit/insured-savings/christmas-club/">Christmas Club</a></li>
+																																				<li><a href="/deposit/insured-savings/ira/">IRA</a></li>
+																																				<li><a href="/deposit/insured-savings/kids-club/">Kids Club</a></li>
+																																				<li><a href="/deposit/insured-savings/money-market/">Money Market</a></li>
+																																				<li><a href="/deposit/insured-savings/share-certificates/">Share Certificates</a></li>
+																																				<li><a href="/pdf/deposit-rates.pdf">Rates</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/deposit/investments/">Investments</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/deposit/investments/ira-certificates/">IRA Certificates</a></li>
+																																				<li><a href="/deposit/investments/silverstar-financial/"> SilverStar Financial</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/deposit/security">Security</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/deposit/security/preventing-fraud">Preventing Fraud</a></li>
+																																				</ul></li>
+																
+													
+													
+																		      							</ul></li>
+						                        <li class="drop"><a href="/loans/">Loans</a>
+                                               <ul class="drop-down">
+                                                													<li class="drop"><a href="/loans/get-a-loan/">Get a Loan</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/real-estate/">Real Estate</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/loans/real-estate/mortgage-loan/">Mortgage Loan</a></li>
+																																				<li><a href="/loans/real-estate/home-equity-loan/">Home Equity Loan</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/auto-loans/">Auto Loans</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/credit-cards/">Credit Cards</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/personal-loans/">Personal Loans</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/student-loans/">Student Loans</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/insurance/">Insurance</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/rewards/">Rewards</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/skip-a-payment/">Skip-A-Payment</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/loans/loan-calculators/">Loan Calculators</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																		      							</ul></li>
+						                        <li class="drop"><a href="/business/">Business</a>
+                                               <ul class="drop-down">
+                                                													<li class="drop"><a href="/business/business-accounts/">Business Accounts</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/business/business-loans/">Business Loans</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/business/merchant-services/">Merchant Services</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/business/benefits-for-employees/">Benefits For Employees</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/business/contact-business-services/">Contact Business Services</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																		      							</ul></li>
+						                        <li class="drop"><a href="/community/">Community</a>
+                                               <ul class="drop-down">
+                                                													<li class="drop"><a href="/blog">Blog</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="http://go.cyfairfcu.org/September-2016-E-Newsletter.html">ENewsletter</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/upcoming-events/">Upcoming Events</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/community/upcoming-events/scholarship-program">Scholarship Program</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/financial-education/">Financial Education</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/press-releases/">Press Releases</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/news-coverage/">News Coverage</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/in-the-press/media-contacts/">Media Contact</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/partnerships/">Partnerships</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/community/partnerships/discount-programs/">Discount Programs</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/community/social-media/">Social Media</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																		      							</ul></li>
+						                        <li class="drop"><a href="/about-us/">About Us</a>
+                                               <ul class="drop-down">
+                                                													<li class="drop"><a href="/about-us/brochures/">Brochures</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/pdf/cyfair-federal-credit-union-auto-loans.pdf">Auto Loans</a></li>
+																																				<li><a href="/pdf/cyfair-federal-credit-union-business-lending.pdf">Business Lending</a></li>
+																																				<li><a href="/pdf/cyfair-federal-credit-union-business-services.pdf">Business Services</a></li>
+																																				<li><a href="/pdf/cyfair-federal-credit-union-checking.pdf">Checking</a></li>
+																																				<li><a href="/pdf/cyfair-federal-credit-union-home-equity.pdf">Home Equity</a></li>
+																																				<li><a href="/pdf/cyfair-federal-credit-union-membership.pdf">Membership</a></li>
+																																				<li><a href="/pdf/cyfair-federal-credit-union-mortgages.pdf">Mortgages</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/virtual-teller-machine">Virtual Teller Machines</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/history/">About Us</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/board-of-directors/">Board of Directors</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/about-us/board-of-directors/serving-on-the-board-of-directors/">Serving on the Board of Directors</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/executive-leadership-team/">Executive Leadership Team</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/annual-reports">Annual Reports</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														<li><a href="/pdf/2015-annual-report.pdf">2015 Annual Report</a></li>
+																																				<li><a href="/pdf/2014-annual-report.pdf">2014 Annual Report</a></li>
+																																				<li><a href="/docs/annual-report-2013.pdf">2013 Annual Report</a></li>
+																																				<li><a href="/docs/CFFCU%20Annual%20Report%202013-FINAL.pdf">2012 Annual Report</a></li>
+																																				<li><a href="/docs/annual-report-2011.pdf">2011 Annual Report</a></li>
+																																				</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/careers/">Careers</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/holiday-closing/">Holiday Closing</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																										<li class="drop"><a href="/about-us/disclosures/">Disclosures</a>
+													
+																
+                                                                <ul class="drop-down level3">
+                        																														</ul></li>
+																
+													
+													
+																		      							</ul></li>
+						                        <li class="drop"><a href="/contact/">Contact</a>
+                                               <ul class="drop-down">
+                                                					      							</ul></li>
+											      							</ul></li>
+						                
+
+                        
+                        
+                        
+                       
+						</ul><br><br>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header -->
+        
+		<!-- content 
+			================================================== -->
+	  <div id="content" class="content">
+
+			<!-- Page Banner -->
+			<div class="page-banner">
+				<div class="container">
+					<br>
+					<h2 style="color:#555555;">Upcoming Events</h2>
+				</div>
+			</div>
+
+			<!-- blog-box Banner -->
+			<div class="blog-box with-one-col">
+				<div class="container">
+					<div class="row">
+
+							<div class="col-md-9 blog-side">
+
+                      		<h3 style="text-align: center;">Check back soon as we're always planning new things...</h3>                            
+                         </div> 
+
+							<div class="col-md-3 sidebar">
+							
+								<div class="sidebar-widgets"><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+								<table cellpadding="5" width="100%"><tr><td valign="top"><div style="padding:0 0 10px 0; text-align:center;z-index:1000; overflow:visible;" class="fb-like" data-href="https://www.facebook.com/cyfairfcu" data-width="200px" data-height="30px" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="true"></div>
+                                
+                                </td><td valign="top" align="right">
+                                
+                                 
+                                <a href="https://twitter.com/cyfairfcu" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                
+                                </td></tr></table>
+								
+                                		  <div class="accord-elem">
+								        <div class="accord-title" style="background-color:#7AA0C4;">
+								          <center><h4 style="color:#FFFFFF;"><strong>Open an Account</strong></h4></center>
+							            <a class="accord-link" href="#"></a> </div>
+								        <div class="accord-content">
+								          
+                                          <div class="row"><center>
+                                         
+								          <a href='https://cs.loanspq.com/Consumer/login/default.aspx?enc2=Xfc_WnLuHh-Xttj1BXSOS-ZTO9bSBMNJOV14wGB4eGQg6nEtsieTEdCkzuewqcYwasuofO4XTRfZGVG0uJwUXISLM3Fh0z7YuwTyU_-8hXqcepwx9cLkZQ3B-JFOLRMD' class="btn btn-default" style="background-color: #92B1CE; color: #FFFFFF; padding-left:30px;padding-right:30px"><font size="+2">Start Now!</font></a>
+                                            
+                                           
+                                            </center>
+                                           </div>
+							              
+                                        </div>
+							          </div>
+                                      
+                                      <div class="accord-elem">
+								        <div class="accord-title" style="background-color:#D67D07;">
+								          <center><h4 style="color:#FFFFFF;"><strong>Investment Services</strong></h4></center>
+							            <a class="accord-link" href="#"></a> </div>
+								        <div class="accord-content">
+								          
+                                          <div class="row"><center>
+                                        
+								         <a href="/deposit/insured-savings/" class="btn btn-default" style="background-color: #F89F29; color: #FFFFFF; padding-left: 10px; padding-right: 10px"><font size="+2">View Our Options</font></a>
+                                            
+                                           
+                                            </center>
+                                           </div>
+							              
+                                        </div>
+							          </div>
+        	
+            
+            							 <div class="accord-elem">
+								        <div class="accord-title" style="background-color:#8B2131;">
+								          <center><h4 style="color:#FFFFFF;"><strong>News and Events</strong></h4></center>
+							            <a class="accord-link" href="#"></a> </div>
+								        <div class="accord-content">
+								          
+                                          <div class="row"><center>
+                                         
+								                                               
+                                     <h4><a href="https://www.cyfairfcu.org/extended/?pid=100">EMV debit card </a></h4><br>
+                                     
+                                                                          
+                                     <h4><a href="https://www.cyfairfcu.org/extended/?pid=93">It's a Money Thing</a></h4><br>
+                                     
+                                                                          
+                                     <h4><a href="https://www.cyfairfcu.org/community/upcoming-events/">Upcoming Events</a></h4><br>
+                                     
+                                                                          
+                                     <h4><a href="http://www.century21ross.com/">Century 21 Ross Group</a></h4><br>
+                                     
+                                                                                 
+                                           
+                                            </center>
+                                           </div>
+							              
+                                        </div>
+							          </div>
+                                
+                                 <div class="accord-elem">
+								        <div class="accord-title" style="background-color:#707070;">
+								          <center><h4 style="color:#FFFFFF;"><strong>Mobile Banking</strong></h4></center>
+							            <a class="accord-link" href="#"></a> </div>
+								        <div class="accord-content">
+								          
+                                          <div class="row"><center>
+                                         
+								            <a href="https://itunes.apple.com/us/app/cy-fair-federal-credit-union/id524992675?mt=8" target="_blank"><img src="/images-new/side-apple.png"></a>
+                                            
+								            <a href="https://play.google.com/store/apps/details?id=com.ifs.banking.fiid3579" target="_blank"><img src="/images-new/side-google.png"></a>
+                                            
+                                           
+                                            </center>
+                                           </div>
+							              
+                                        </div>
+							          </div>
+
+										 <div class="accord-elem">
+								        <div class="accord-title" style="background-color:#7AC043;">
+								          <center><h4 style="color:#FFFFFF;"><strong>Academic Calendar</strong></h4></center>
+							            <a class="accord-link" href="#"></a> </div>
+								        <div class="accord-content">
+								          
+                                          <div class="row"><center>
+                                         
+								            <a href="https://itunes.apple.com/us/app/cy-fair-fcu-academic-calendar/id836429478?mt=8" target="_blank"><img src="/images-new/side-apple.png"></a>
+                                            
+								            <a href="https://play.google.com/store/apps/details?id=com.sideresult.cyfaircal" target="_blank"><img src="/images-new/side-google.png"></a>
+                                            
+                                           
+                                            </center>
+                                           </div>
+							              
+                                        </div>
+							          </div>
+                                      
+                                     
+							   <center>
+							
+
+								<div class="accordion-widget widget">
+										<h3>Current Rates</h3><br>
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+
+								
+								    <div class="accordion-box">
+								      <div class="accord-elem active">
+								        <div class="accord-title">
+								          <h4>Auto Rates - APR*</h4>
+							            <a class="accord-link" href="#"><i class="fa fa-arrow-circle-o-down fa-2x" style="float:right; padding:10px;"></i></a> </div>
+								        <div class="accord-content">
+								          
+                                          <div class="row"><center>
+                                          
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">New<br> <strong>2.19%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">Used/Refi<br> <strong>2.19%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">Motorcycle<br> <strong>5.25%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                       </center>
+                                           </div>
+							              
+                                        </div>
+							          </div>
+								      <div class="accord-elem">
+								        <div class="accord-title">
+								          <h4>Signature - APR*</h4>
+								          <a class="accord-link" href="#"><i class="fa fa-arrow-circle-o-down fa-2x" style="float:right; padding:10px;"></i></a> </div>
+								        <div class="accord-content"> 
+								           <div class="row"><center>
+                                          
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">Signature<br> <strong>8.00%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">Line of Credit<br> <strong>9.50%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                       </center>
+                                           </div>
+							            </div>
+							          </div>
+								      <div class="accord-elem">
+								        <div class="accord-title">
+								          <h4>Home Equity - APR*</h4>
+								          <a class="accord-link" href="#"><i class="fa fa-arrow-circle-o-down fa-2x" style="float:right; padding:10px;"></i></a> </div>
+								        <div class="accord-content">
+                                        
+                                        <div class="row"><center>
+                                          
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">60 Months<br> <strong>3.50%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">120 Months<br> <strong>3.75%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">180 Months<br> <strong>4.00%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                       </center>
+                                           </div>
+							            </div>
+							          </div>
+								      <div class="accord-elem">
+								        <div class="accord-title">
+								          <h4>Credit Cards - APR*</h4>
+								          <a class="accord-link" href="#"><i class="fa fa-arrow-circle-o-down fa-2x" style="float:right; padding:10px;"></i></a> </div>
+								        <div class="accord-content"> 
+                                        
+                                        <div class="row"><center>
+                                          
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">MC/Visa Platinum<br> <strong>9.50%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">MC/Visa Platinum + Rewards<br> <strong>11.50%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                                            
+                                          <div class="col-sm-12">
+								            <a href="/pdf/loan-rates.pdf"><h3 style="color:#7AC043;">MasterCard Classic<br> <strong>9.50%</strong></h3></a>
+                                            </div>
+                                            
+                                                                                       </center>
+                                           </div>
+							            </div>
+							          </div>
+								      
+							        </div>
+							     
+							</div>
+
+						</div>
+                        </div>	
+								</div>
+
+								<div class="tags-widget widget"></div>
+
+								<div class="text-widget widget"><br>
+							      <h3>Resources<br>
+								  <ul>
+								    <li><a href="https://www.cyfairfcu.org/about-us/holiday-closing/">Credit Union Holiday Closings</a></li>
+								    <li><a target="_blank" href="http://www.cumemberautocenter.com/frontend/index/cu_landing/cy-fair-federal-credit-union">Car Buying Help</a></li>
+								    <li><a target="_blank" href="https://reorder.libertysite.com/default.aspx">Reorder Checks</a></li>
+								    
+							      </ul>
+								  </h3>
+								</div>
+                                
+                                <div class="text-widget widget"><br>
+							      <h3>Translate<br>
+								 
+                                 	<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                                 
+								  </h3>
+								</div>                                
+							</div>
+						</div>
+					</div>
+											
+				</div>
+			</div>
+
+		</div>
+		<!-- End content -->
+
+
+			<!-- footer 
+			================================================== -->
+		                        
+                                   <div style="background:#ffffff; width:100%;"><!--<a href='#'>--><center><img src="/upload/1_43407136.png" class="img-responsive"><!--</a>--></center></div>
+                              
+         
+                    <br>
+         <footer style="border:none;background:#f4f4f4;">
+       
+			<div class="up-footer">
+				<div class="container">
+                
+                <div class="row">
+                <div class="col-md-4" align="center">
+                <h4 style="color:#666666;">
+                                Lobby Hours<br><br>
+								  <table cellpadding="12">
+								  <tr><td>
+								    <strong>Mon - Thur</strong></td><td> 9 AM to 5 PM</td></tr>
+								    <tr><td>
+							        <strong>Friday</strong></td><td> 9 AM to 6 PM</td></tr>
+								    <tr><td>
+						          <strong>Saturday</strong></td><td> 9 AM to 1 PM</td></tr></table><br>
+							  </h4>
+                              
+                             
+                                
+                </div>
+                
+                 <div class="col-md-4" align="center">
+                <h4 style="color:#666666;">Drive-thru Hours<br><br>
+								<table cellpadding="12">
+								  <tr>
+								    <td><strong>Mon - Fri</strong></td>
+								    <td> 8 AM to 7 PM</td>
+							      </tr>
+								  <tr>
+								    <td><strong>Saturday</strong></td>
+								    <td> 9 AM to 1 PM</td>
+							      </tr>
+							  </table>
+                              <br>
+                              </h4>
+                              
+                         
+                             
+                               
+                </div>
+                 <div class="col-md-4" align="center">
+                <h4 style="color:#666666;">Member Resource Center Hours<br><br>
+								<table cellpadding="12">
+								  <tr>
+								    <td><strong>Mon - Thurs</strong></td>
+								    <td> 9 AM to 5 PM</td>
+							      </tr>
+                                  <tr>
+								    <td><strong>Friday</strong></td>
+								    <td> 9 AM to 6 PM</td>
+							      </tr>
+								  <tr>
+								    <td><strong>Saturday</strong></td>
+								    <td> 9 AM to 1 PM</td>
+							      </tr>
+							  </table>
+                              <br>
+                              </h4>
+                </div>
+                
+            </div>
+            
+            
+            <div class="row">
+            <div class="col-md-4">
+            
+                                <a href="/about-us/holiday-closing/" class="btn btn-success form-control">Click for Holiday Hours</a><br><br>
+                                For problems with your debit card after hours, please call 800-889-5280 <br>
+<br>
+For problems with your credit card after hours, please call 888-310-4861
+<br>
+<br>
+To access MemberLine, please dial 888-890-7676 and select option 9.<br>
+                                
+            </div>
+            <div class="col-md-4">
+            
+								
+									<div class="col-md-12" style="padding:5px;">
+									  <a class="phone" href="tel:2818907676"><button class="form-control btn btn-default"><i class="fa fa-phone" style="float:left; padding-top:4px;"></i> 281.890.7676</button></a>
+									</div>
+                                    <div class="col-md-12" style="padding:5px;">
+									  <a class="phone" href="tel:8888907676"><button class="form-control btn btn-default"><i class="fa fa-phone" style="float:left; padding-top:4px;"></i> 888.890.7676</button></a>
+									</div>
+                                    
+                                     <div class="col-md-12" style="padding:5px;">
+									  <a class="phone"><button class="form-control btn btn-default"><i class="fa fa-fax" style="float:left; padding-top:4px;"></i> 281.955.3100</button></a>
+									</div>
+                                    
+                                    
+                                    
+                                    <div class="col-md-12" style="padding:5px;">
+									  <a class="phone" href="mailto:cffcu@cyfairfcu.org"><button class="form-control btn btn-default"><i class="fa fa-envelope" style="float:left; padding-top:4px;"></i> cffcu@cyfairfcu.org</button></a>
+									</div>
+                                    
+                                    <div class="col-md-12" style="padding:5px;">
+									  <a class="phone" href="https://www.google.com/maps/search/9601+Jones+Road,+Ste.+100/@45.5386298,-122.6261813,15z/data=!3m1!4b1" target="_blank"><button class="form-control btn btn-default"><i class="fa fa-home" style="float:left; padding-top:4px;"></i> 9601 Jones Road, Ste. 100</button></a><br><br>
+									</div>
+                                    
+									
+								</ul>
+            </div>
+            <div class="col-md-4">
+            <div class="widget footer-widgets work-widget">
+								<center>
+                               
+                                <img src="/images-new/footer-logos.png"><br>
+                              <font size="-3"><br>
+ Your savings federally insured to at least $250,000 and 
+									backed <br>by the full faith and credit of the United States Government.</font><br><br><a href="/about-us/disclosures/" class="btn btn-success">See All Disclosures</a>&nbsp;&nbsp;<a href="/deposit/security/" class="btn btn-success">Security</a></center>
+							</div>
+            </div>
+            
+            </div>
+                
+					
+				</div>
+			</div>
+
+			<div class="footer-line">
+				<div class="container">
+					<p>&#169; 2015 Cy-Fair Federal Credit Union,  All Rights Reserved -- ACH Routing Number 313083235 -- <a href='/about-us/disclosures/thirdpartylinkdisclosure/' style="color:#FFFFFF;">Third Party Disclosure</a></p>
+                   <a class="go-top" href="#"></a>
+				</div>
+			</div>
+
+		</footer>
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-56064902-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+
+<script type="text/javascript">
+(function() {
+  var didInit = false;
+  function initMunchkin() {
+    if(didInit === false) {
+      didInit = true;
+      Munchkin.init('085-CLR-750');
+    }
+  }
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//munchkin.marketo.net/munchkin.js';
+  s.onreadystatechange = function() {
+    if (this.readyState == 'complete' || this.readyState == 'loaded') {
+      initMunchkin();
+    }
+  };
+  s.onload = initMunchkin;
+  document.getElementsByTagName('head')[0].appendChild(s);
+})();
+</script>
+ 
+		<!-- End footer -->	</div>
+	
+
+	<script type="text/javascript" src="/js-new/jquery.min.js"></script>
+	<script type="text/javascript" src="/js-new/jquery.migrate.js"></script>
+ 
+	<script type="text/javascript" src="/js-new/bootstrap.js"></script>
+   
+    
+    
+	<script type="text/javascript" src="/js-new/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="/js-new/plugins-scroll.js"></script>
+	<script type="text/javascript" src="/js-new/script.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
+</body>
+</html>
